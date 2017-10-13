@@ -20,7 +20,7 @@ class testnumber(unittest.TestCase):
 
     def test_noNone(self):
         self.assertEqual(2,0,msg='a is not equal 0')
-        self.assertEqual(self.b,0,msg='b is not equal 0')
+        self.assertEqual(3,0,msg='b is not equal 0')
 
     def test_add(self):
         self.assertEqual(self.n.add(),5,msg='add is error')
