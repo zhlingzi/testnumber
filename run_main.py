@@ -23,9 +23,10 @@ if __name__ == '__main__':
     #repo = runner.run(suites)
 
     # set report
-    now = time.strftime('%Y-%m-%d %T_%M_%S')
+    #now = time.strftime('%Y-%m-%d %T_%M_%S')
+    now = time.strftime('%Y-%m-%d %H.%M.%S')
     #filename = './report/'+ now + '_result.html'
-    filename =' result.html'
+    filename = now + '_result.html'
     fp = open(filename,'wb')
 
     repohtml = HTMLTestRunner(stream = fp,title = 'Number test report',
